@@ -1,0 +1,14 @@
+name: first workflow
+on:
+  push:
+    branches:
+        - "main"
+        - "develop"
+        - "release"
+jobs:
+  lab-job:
+      run-ons: ubunut-latest
+      steps:
+          - name: Start Jobs
+            run: echo 'Hello DevOps'
+            
